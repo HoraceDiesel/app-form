@@ -1,0 +1,24 @@
+
+.app-form-wrapper {
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+.section-header {
+	text-align: center;
+}
+
+label.control-label {
+	padding-right: 0;
+}
+
+@media (min-width: 768px) {
+	ul.checkout {
+		overflow: auto;
+	}
+	#shipping-address li {
+		width: 50%;
+		float: left;
+	}
+}
+

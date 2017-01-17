@@ -1,0 +1,193 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 50px;
+            padding-bottom: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="app-form-wrapper">
+                    <form name="product-form" class="form-horizontal" action="" method="post">
+                        <div id="shipping-address-container"> 
+                            <div class="section-header"> 
+                                <h2>Shipping Information</h2> 
+                            </div>
+                            <div>
+                                <ul class="checkout list-unstyled" id="shipping-address"> 
+                                    <li class="form-group " id="shipping-email">
+                                        <label for="email-address" class="col-sm-5 control-label">Email Address</label>
+                                        <div class="col-sm-7"> 
+                                            <input class="form-control" type="text"  id="email-address"> 
+                                        </div>
+                                    </li>  
+                                    <li class="form-group " id="shipping-email">
+                                        <label for="email-address-confirm" class="col-sm-5 control-label">Confrim Email Address</label> 
+                                        <div class="col-sm-7">
+                                            <input class="form-control" type="text"  id="email-address-confirm"> 
+                                        </div>
+                                    </li>  
+                                    <li class="form-group " id="shipping-fname"> 
+                                        <label for="first-name" class="col-sm-5 control-label">  First Name </label>
+                                        <div class="col-sm-7">
+                                            <input class="form-control" id="first-name" maxlength="15"  value=""  type="text" >
+                                        </div>
+                                    </li> 
+                                    <li class="form-group " id="shipping-lname"> 
+                                        <label for="last-name" class="col-sm-5 control-label">  Last Name </label> 
+                                        <div class="col-sm-7">
+                                            <input class="form-control" id="last-name" maxlength="19"  value=""  type="text" >
+                                        </div>
+                                    </li>   
+                                    <li class="form-group " id="shipping-addr1"> 
+                                        <label for="address-1" class="col-sm-5 control-label">  Address 1 </label> 
+                                        <div class="col-sm-7">   
+                                            <input class="form-control" id="address-1" maxlength="35"  value="" type="text" >
+                                        </div>
+                                    </li> 
+                                    <li class="form-group " id="shipping-addr2"> 
+                                        <label for="address-2" class="col-sm-5 control-label"> Address 2 </label> 
+                                        <div class="col-sm-7">  
+                                            <input class="form-control" id="address-2" maxlength="35"  value="" type="text" >
+                                        </div>
+                                    </li>   
+                                    <li class="form-group " id="shipping-city"> 
+                                        <label for="city" class="col-sm-5 control-label"> City </label> 
+                                        <div class="col-sm-7">   
+                                            <input class="form-control" id="city"  value="" type="text">
+                                        </div>
+                                    </li> 
+                                    <li class="form-group " id="shipping-state"> 
+                                        <label for="state" class="col-sm-5 control-label"> State </label>
+                                        <div class="col-sm-7">   
+                                            <select class="form-control" name="state">
+                                            <option value="AL">AL</option>
+                                            <option value="AK">AK</option>
+                                            <option value="AZ">AZ</option>
+                                            <option value="AR">AR</option>
+                                            <option value="CA">CA</option>
+                                            <option value="CO">CO</option>
+                                            <option value="CT">CT</option>
+                                            <option value="DE">DE</option>
+                                            <option value="DC">DC</option>
+                                            <option value="FL">FL</option>
+                                            <option value="GA">GA</option>
+                                            <option value="HI">HI</option>
+                                            <option value="ID">ID</option>
+                                            <option value="IL">IL</option>
+                                            <option value="IN">IN</option>
+                                            <option value="IA">IA</option>
+                                            <option value="KS">KS</option>
+                                            <option value="KY">KY</option>
+                                            <option value="LA">LA</option>
+                                            <option value="ME">ME</option>
+                                            <option value="MD">MD</option>
+                                            <option value="MA">MA</option>
+                                            <option value="MI">MI</option>
+                                            <option value="MN">MN</option>
+                                            <option value="MS">MS</option>
+                                            <option value="MO">MO</option>
+                                            <option value="MT">MT</option>
+                                            <option value="NE">NE</option>
+                                            <option value="NV">NV</option>
+                                            <option value="NH">NH</option>
+                                            <option value="NJ">NJ</option>
+                                            <option value="NM">NM</option>
+                                            <option value="NY">NY</option>
+                                            <option value="NC">NC</option>
+                                            <option value="ND">ND</option>
+                                            <option value="OH">OH</option>
+                                            <option value="OK">OK</option>
+                                            <option value="OR">OR</option>
+                                            <option value="PA">PA</option>
+                                            <option value="RI">RI</option>
+                                            <option value="SC">SC</option>
+                                            <option value="SD">SD</option>
+                                            <option value="TN">TN</option>
+                                            <option value="TX">TX</option>
+                                            <option value="UT">UT</option>
+                                            <option value="VT">VT</option>
+                                            <option value="VA">VA</option>
+                                            <option value="WA">WA</option>
+                                            <option value="WV">WV</option>
+                                            <option value="WI">WI</option>
+                                            <option value="WY">WY</option>
+                                            </select> 
+                                        </div> 
+                                    </li>   
+                                    <li class="form-group " id="shipping-zip"> 
+                                        <label for="zip" class="col-sm-5 control-label">Zip</label> 
+                                        <div class="col-sm-7">
+                                            <input class="form-control" id="zip" maxlength="5"  value="" type="text">
+                                        </div>
+                                    </li> 
+                                    <li class="form-group " id="shipping-phone"> 
+                                        <label for="phone" class="col-sm-5 control-label">Phone </label> 
+                                        <div class="col-sm-7">
+                                            <input class="form-control" id="phone" maxlength="10"  value="" type="text" >
+                                        </div>
+                                    </li>           
+                                    <li class="form-group " id="shipping-toggle"> 
+                                        <div class="col-sm-4">
+                                            <label class="control-label">Is this address? </label> 
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <label class="radio-inline">
+                                                <input id="residential"  value="Residential" type="radio" name="address-type">
+                                                <span> Residential </span>
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input id="commercial"  value="Commercial" type="radio" name="address-type">
+                                                <span> Commercial </span>
+                                            </label>
+                                        </div>
+                                    </li>  
+                                    <li class="form-group " id="shipping-company"> 
+                                        <label for="company" class="col-sm-5 control-label"> Company Name </label> 
+                                        <div class="col-sm-7">
+                                            <input class="form-control" id="company" value="" type="text" >
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>                                         
+                            
+                        </div>
+                        <input class="btn btn-primary center-block" type="submit" value="Submit Form"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
